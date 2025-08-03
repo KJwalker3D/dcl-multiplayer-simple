@@ -28,3 +28,13 @@ export function main() {
     }
   )
 }
+
+
+
+// Test results: 
+
+// 1. Player 1 loads in and sees the cube
+// 2. Player 2 loads in and sees the cube and player 1
+// 3. Player 1 clicks the cube and the color doesnt change
+// 4. Player 1 does not see player 2 (even after running away and coming back)
+// Therefore the players aren't in sync so the cube cannot be synced. 
