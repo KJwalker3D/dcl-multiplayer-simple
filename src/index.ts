@@ -8,6 +8,10 @@ let currentColorIndex = 0
 let cubeCreated = false
 const sceneMessageBus = new MessageBus()
 
+// Uses syncEntity for multiplayer sync, fallback to MessageBus for local testing
+// syncEntity is the DCL-compliant way to sync entities between clients
+// MessageBus is a fallback for local testing
+
 export function main() {
   engine.addSystem(() => {
     if (!cubeCreated) {
