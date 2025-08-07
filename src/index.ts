@@ -23,7 +23,7 @@ export function main() {
       if (isStateSyncronized()) {
         currentColorIndex = (currentColorIndex + 1) % colors.length
         Material.setBasicMaterial(cube, { diffuseColor: colors[currentColorIndex] })
-        syncEntity(cube, [Material.componentId], 1000)
+        // No need to call syncEntity again - the entity is already synced!
       }
     }
   )
